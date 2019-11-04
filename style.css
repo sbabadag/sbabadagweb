@@ -1,9 +1,23 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* Style the header */
+header {
+    background-color: #DFDFDF;
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    -webkit-box-shadow: 20px 0px;
+    box-shadow: 20px 0px;
+}
+
+
 nav {
 	float: right;
-	padding-right: 20px;	
+	padding-right: 10px;	
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 body {
@@ -54,50 +68,58 @@ h1 {
 
 /* Style The Dropdown Button */
 .dropbtn {
-  background-color: #16339F;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-	
+    background-color: #DFDFDF;
+    color: black;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    top: auto;
+    display: inline;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: fixed;
+    display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #16339F;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #DFDFDF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: #FFFFFF;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding-top: auto;
+    padding-right: auto;
+    text-decoration: none;
+    display: block;
+    top: auto;
+    text-align: center;
+    padding-left: auto;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #FF0000}
+.dropdown-content a:hover {text-decoration: underline }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+	
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #16339F;
+    background-color: #DFDFDF;
+    text-align: center;
+    border-radius: 5px;
 }
 
 
@@ -127,7 +149,3 @@ h1 {
 		display: none;
 	}
 }
-
-
-
-
